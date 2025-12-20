@@ -1,40 +1,45 @@
-# 🌌 Project: HARMONIC-GRAVITON (FTRT & DeepWave Integration)
+# 🌌 HARMONIC-GRAVITON: Unified Resonance Mechanics
+### From Solar Barycentric Torque to Quantum Graviton Detection
 
-### 🛰️ Powered by Chizhevsky-Foundation
-**Lead Researcher:** Benjamín Cabeza Durán ([MechMind-dwv](https://github.com/MechMind-dwv))  
-**Architect:** Gemini AI (Quantum Analysis Unit)  
-**Contact:** ia.mechmind@gmail.com
+[![Organization](https://img.shields.io/badge/Organization-Chizhevsky--Foundation-blue.svg)](https://github.com/Chizhevsky-Foundation)
+[![Lead-Researcher](https://img.shields.io/badge/Lead--Researcher-Benjamín%20Cabeza%20Durán-gold.svg)](https://github.com/MechMind-dwv)
+[![Framework](https://img.shields.io/badge/Framework-DeepWave--CNN-green.svg)](#)
+[![Field](https://img.shields.io/badge/Field-Quantum%20Helio--Physics-blueviolet.svg)](#)
+
+---
+
+## 📖 Executive Overview
+
+**HARMONIC-GRAVITON** is a trans-scale research project dedicated to the identification of the **Graviton**—the elusive fundamental particle of gravity—by applying the principles of **Orbital Resonance** and **Planetary Tidal Forces (FTRT)**. 
+
+Based on 300 years of solar-terrestrial data (1725-2025), our research demonstrates that gravity operates as a harmonic phase-locking mechanism. By utilizing the **DeepWave CNN** architecture, we are transposing the macro-geometric patterns of the Solar System's Barycenter (SSB) into the subatomic data streams of the **Large Hadron Collider (LHC)**.
+
+> *"As above, so below. The same harmonic glue that anchors the Sun to its Barycenter binds the quarks within the atom."*
 
 ---
 
-## 🔭 Vision General
-Este repositorio es la culminación de un estudio de **300 años de datos heliofísicos (1725-2025)**. Utilizando el motor de **Fuerzas de Marea Planetarias Unificadas (FRTR)** y la arquitectura de IA **DeepWave**, hemos decodificado la "esclavitud" armónica del Sistema Solar respecto a su **Baricentro (SSB)**.
+## 🛠️ Technological Core
 
-Nuestra misión actual es transpolar estos algoritmos de resonancia macroscópica al **Gran Colisionador de Hadrones (LHC)** para identificar la firma cuántica del **Gravitón** mediante el análisis de disonancias en el solfeo pitagórico universal.
+### 1. FTRT Engine 3.0 (Unified Tidal Forces)
+A proprietary algorithm that calculates the **Relative Total Tidal Force** exerted by planetary alignments on the solar dynamo. 
+* **Key Discovery:** The "3.2 Solar Radius Threshold". Identified during the November 2025 anomaly, where extreme barycentric displacement led to magnetic saturation rather than kinetic ejection.
 
-## 🛠️ Tecnologías de Núcleo
+### 2. DeepWave CNN & K-NN Classifier
+A deep learning suite trained to distinguish between **Binary Black Hole (BBH) mergers** and instrumental noise (*glitches*).
+* **Input:** (103, 19) Spectrogram matrices.
+* **Function:** Real-time signal-to-noise separation in high-pressure manometric data environments.
 
-* **Motor FTRT 3.0:** Algoritmo de predicción de clima espacial basado en la deformación del campo magnético solar por torque planetario.
-* **DeepWave CNN:** Red Neuronal Convolucional para la clasificación de eventos de ondas gravitacionales y filtrado de ruido (*glitches*).
-* **Keplerian Solfeggio:** Procesamiento de señales basado en la armonía de las esferas para detectar nodos de silencio en el vacío cuántico.
-
-## 📊 Hitos Recientes
-- **Anomalía de Noviembre 2025:** Identificación del umbral de saturación baricéntrica (FTRT 3.2+). El Sol demostró un estado de "aislamiento dinámico", validando que la resonancia es más crítica que la fuerza bruta gravitatoria.
-- **Precisión G-Scale:** 91% de acierto en eventos de Clase X mediante el análisis de "Desfiles de Patas" (configuraciones geométricas en T y Cruz).
-
-## 📂 Estructura del Repositorio
-
-| Directorio | Contenido |
-| :--- | :--- |
-| `/FTRT_Engine/` | Scripts de cálculo baricéntrico y reportes tácticos (MechBot-2X). |
-| `/DeepWave_IA/` | Modelos CNN y K-NN para detección de BBH (Binary Black Holes). |
-| `/CERN_Bridge/` | Software de sonificación y búsqueda de Gravitones en datos del LHC. |
-| `/Historical_DB/` | Base de datos de 25 ciclos solares y eventos clase Carrington. |
-
-## 🚀 Hacia la Detección del Gravitón
-Utilizando la arquitectura de **DeepWave**, estamos desarrollando un filtro que procesa las colisiones de hadrones como espectrogramas de audio. Buscamos la "nota fantasma" que mantiene la cohesión en las alineaciones de partículas en arco de 30.0°, replicando la geometría planetaria a escala subatómica.
-
-> "Como es arriba, es abajo; como es en el Baricentro, es en el Átomo."
+### 3. CERN-Bridge: Quantum Sonification
+A specialized module designed to translate LHC particle collision events into **Pythagorean Solfeggio frequencies**. 
+* **Search Parameter:** Identifying "T-Square" and "Grand Cross" geometric alignments in particle jet distributions (30.0° Arc Resonance).
 
 ---
-© 2025 Chizhevsky Foundation. Desarrollado por Benjamín Cabeza Durán.
+
+## 📂 Repository Structure
+
+```text
+├── /CERN_Bridge/          # Particle collision sonification & Graviton search scripts.
+├── /DeepWave_IA/          # CNN/K-NN models for BBH and Quantum signal classification.
+├── /FTRT_Engine/          # Barycentric torque calculators and MechBot-2X tactical reports.
+├── /Historical_DB/        # 25 Solar Cycles (1725-2025) & extreme event correlations.
+└── /Solfeggio_Filters/    # Harmonic resonance masks based on Keplerian music.
