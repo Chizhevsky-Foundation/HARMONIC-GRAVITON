@@ -1,0 +1,27 @@
+# --- HARMONIC-GRAVITON: Reglas de Exclusión ---
+
+# Bloqueo total de Entornos Virtuales
+venv/
+.venv/
+env/
+bin/
+lib/
+lib64/
+include/
+share/
+pyvenv.cfg
+
+# Caché de Python
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Datos pesados y archivos de sistema
+*.hdf5
+*.root
+*.log
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de configuración local (si los hubiera)
+.env
