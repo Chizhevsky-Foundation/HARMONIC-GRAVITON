@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/foundation_logo.png" width="400"></p>
+
 # 🌌 HARMONIC-GRAVITON: Unified Resonance Mechanics
 ### From Solar Barycentric Torque to Quantum Graviton Detection
 
