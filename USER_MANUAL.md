@@ -22,3 +22,6 @@ Es la llave maestra. Sin este factor de armonía, el sistema interpretará los d
 
 ---
 "La maestría sobre el Aire es el gobierno de la Mente."
+
+## 🧬 La Ecuación G_nu
+El sistema utiliza el límite de fase armónica para detectar gravitones en nodos de silencio. La gravedad no es fuerza, es resonancia.
