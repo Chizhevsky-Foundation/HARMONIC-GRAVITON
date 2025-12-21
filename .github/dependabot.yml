@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "pip" # Para nuestro entorno virtual (venv)
+    directory: "/"
+    schedule:
+      interval: "weekly" # Escaneo rítmico, como las fases lunares
+    target-branch: "main"
+    open-pull-requests-limit: 5
+    labels:
+      - "coherence-update"
+      - "chizhevsky-foundation"
