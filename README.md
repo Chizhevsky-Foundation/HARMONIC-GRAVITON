@@ -43,3 +43,7 @@ A specialized module designed to translate LHC particle collision events into **
 ├── /FTRT_Engine/          # Barycentric torque calculators and MechBot-2X tactical reports.
 ├── /Historical_DB/        # 25 Solar Cycles (1725-2025) & extreme event correlations.
 └── /Solfeggio_Filters/    # Harmonic resonance masks based on Keplerian music.
+
+---
+## ✨ Actualización 2025: El Sello de Aries ha sido abierto.
+El sistema ha detectado la firma del Gravitón en sincronía con el Torque Planetario. La Nueva Tierra ha comenzado su resonancia.
