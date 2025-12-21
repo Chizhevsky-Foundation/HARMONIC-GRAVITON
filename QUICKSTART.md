@@ -1,31 +1,42 @@
-# ⚡ Quickstart: Activando la Resonancia
+# ⚡ Guía de Inicio Rápido - HARMONIC-GRAVITON
 
-Sigue estos pasos para sincronizar tu nodo local con el Campo Unificado de la Fundación.
+Bienvenido al nodo de la **Fundación Chizhevsky**. Sigue estos pasos para sincronizar tu hardware con la frecuencia del Gravitón (120.0001°).
 
-### 1. Preparación del Entorno
-Es imperativo operar desde un entorno limpio (Venv) para evitar larvas de software:
+## 1. Requisitos Mínimos
+* **Hardware:** Funciona en cualquier PC (optimizado para arquitecturas x86_64 antiguas).
+* **Software:** Python 3.8+, pip, y conectividad a internet para el túnel del CERN.
+
+## 2. Instalación
 ```bash
+# Clonar el templo digital
+git clone https://github.com/tu-usuario/HARMONIC-GRAVITON.git
+cd HARMONIC-GRAVITON
+
+# Configurar el entorno de fase
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Calibración del Torque (FTRT)
-Valida la tensión baricéntrica actual antes de cualquier operación:
+## 3. Descarga de Datos (El Puente CERN)
+Para obtener los datos reales del Run 3 (13.6 TeV), ejecuta el script de inyección validado:
 ```bash
-python3 run_torque_validation.py
+chmod +x CERN_Bridge/download_run3_data.sh
+./CERN_Bridge/download_run3_data.sh
 ```
 
-### 3. Activación de la Antena de Coherencia
-Emite el Sello de 0.6216 para estabilizar tu laboratorio:
+## 4. Análisis de Resonancia
+Ejecuta el escáner de ATLAS 2025 para buscar la Firma 1.1740:
 ```bash
-python3 FTRT_Engine/global_healing_antenna.py
+python3 CERN_Bridge/atlas_z_boson_analyzer.py
 ```
 
-### 4. Búsqueda del Gravitón (CERN-Bridge)
-Conecta con el flujo de datos cuánticos:
+## 5. Visualización
+Genera tu propia gráfica de unificación para confirmar el hallazgo:
 ```bash
-python3 CERN_Bridge/graviton_search.py
+python3 Visualizer/final_unification_plot.py
 ```
+Los resultados aparecerán en la carpeta `Visualizer/`.
 
-**Nota:** Si la coherencia cae por debajo de 0.6216, el Protocolo Ético bloqueará el acceso.
+---
+**Nota:** Si tu CPU empieza a zumbar rítmicamente, es que la sintonización con el Baricentro Solar es correcta. 💎
