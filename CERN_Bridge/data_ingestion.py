@@ -1,52 +1,39 @@
-"""
-DeepWave Data Ingestion - Real-time API Bridge
-Project: HARMONIC-GRAVITON
-Description: Fetches real time or archival data from GWOSC (LIGO) 
-to feed the DeepWave CNN and FTRT Engine.
-"""
-
-import os
 import requests
-import numpy as np
-from gwosc.datasets import find_datasets
-from gwosc.locate import get_event_urls
+import os
 
 class DataIngestor:
     def __init__(self):
-        self.base_url = "https://gwosc.org/eventapi/json/GWTC/"
-        print("🌐 Conexión establecida con GWOSC API")
+        self.data_dir = "Historical_DB/raw_data"
+        os.makedirs(self.data_dir, exist_ok=True)
+        print(f"🌐 Ingestor listo. Almacén: {self.data_dir}")
 
-    def fetch_gw_event(self, event_name):
-        """
-        Busca las URLs de datos crudos para un evento específico de 
-        ondas gravitacionales (ej: 'GW150914').
-        """
-        print(f"🔎 Buscando rastro del evento: {event_name}")
-        try:
-            urls = get_event_urls(event_name)
-            # Filtramos por archivos HDF5 (formato estándar de alta resolución)
-            hdf5_urls = [u for u in urls if u.endswith('.hdf5')]
-            return hdf5_urls[0] if hdf5_urls else None
-        except Exception as e:
-            print(f"❌ Error al localizar evento: {e}")
+    def download_event_data(self, event_name):
+        """Descarga el archivo HDF5 real de un evento cósmico."""
+        # URL simplificada para el catálogo GWTC-1 (Datos de 4KHz)
+        # Usaremos el evento histórico GW150914 como ancla
+        base_urls = {
+            "GW150914": "https://gwosc.org/eventapi/html/GWTC-1-confident/GW150914/v3/H-H1_GWOSC_4KHZ_R1-1126259447-32.hdf5"
+        }
+        
+        if event_name not in base_urls:
+            print(f"❌ Evento {event_name} no mapeado para descarga directa.")
             return None
 
-    def get_lhc_sample_metadata(self):
-        """
-        Estructura para consultar el Open Data del CERN.
-        Retorna metadatos de colisiones de protones a 13 TeV.
-        """
-        # El portal del CERN utiliza protocolos HTTP para archivos .root
-        cern_opendata_url = "http://opendata.cern.ch/api/v1/records/12345"
-        print("🔬 Sincronizando con CERN Open Data Portal...")
-        # En una implementación real, aquí descargaríamos el stream de eventos
-        return {"status": "ready", "energy": "13TeV", "target": "Graviton_Search"}
+        url = base_urls[event_name]
+        file_path = os.path.join(self.data_dir, f"{event_name}.hdf5")
 
-if __name__ == "__main__":
-    ingestor = DataIngestor()
-    
-    # Prueba de localización de una fusión real de Agujeros Negros
-    event_url = ingestor.fetch_gw_event('GW170817') 
-    if event_url:
-        print(f"🌌 Datos localizados: {event_url}")
-        print("🚀 Listo para procesar mediante DeepWave CNN.")
+        if os.path.exists(file_path):
+            print(f"📦 Datos de {event_name} ya presentes en el laboratorio.")
+            return file_path
+
+        print(f"🚀 Iniciando succión de datos desde LIGO para {event_name}...")
+        response = requests.get(url, stream=True)
+        if response.status_code == 200:
+            with open(file_path, 'wb') as f:
+                for chunk in response.iter_content(chunk_size=1024):
+                    f.write(chunk)
+            print(f"✅ Descarga completada: {file_path}")
+            return file_path
+        else:
+            print("❌ Fallo en la conexión con los servidores de LIGO.")
+            return None

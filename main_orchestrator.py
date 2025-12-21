@@ -9,6 +9,7 @@ import json
 from DeepWave_IA.deepwave_classifier_cnn import DeepWaveCNN
 from CERN_Bridge.data_ingestion import DataIngestor
 from Solfeggio_Filters.keplerian_mask import SolfeggioFilter
+from Visualizer.resonance_plotter import plot_resonance_analysis
 
 class HarmonicOrchestrator:
     def __init__(self):
@@ -46,6 +47,7 @@ class HarmonicOrchestrator:
     def display_results(self, score, prob, name):
         print(f"\n📊 Análisis del Evento: {name}")
         print(f"🔗 Coherencia Cuántica: {score:.4f}")
+        plot_resonance_analysis(name, score)
         
         if score > 0.85:
             print("🌟 [RESULTADO: FIRMA DE GRAVITÓN DETECTADA]")
