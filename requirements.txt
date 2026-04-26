@@ -1,5 +1,5 @@
 # Nucleo de Inteligencia Artificial para DeepWave
-tensorflow>=2.10.0
+tensorflow>=2.21.0
 
 # Procesamiento de Matrices y Ciencia de Datos para FTRT
 numpy>=1.23.0
