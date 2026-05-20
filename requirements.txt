@@ -2,7 +2,7 @@
 tensorflow>=2.21.0
 
 # Procesamiento de Matrices y Ciencia de Datos para FTRT
-numpy>=1.23.0
+numpy>=2.4.5
 scipy>=1.9.0
 
 # Herramientas de Audio para CERN-Bridge
